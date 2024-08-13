@@ -3,7 +3,7 @@
 
 import cv2 as cv
 
-image = cv.imread("materials\\money.png", cv.IMREAD_COLOR)
+image = cv.imread("money.png", cv.IMREAD_COLOR)
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 ret, thresh = cv.threshold(gray, 127, 255,1)
 
